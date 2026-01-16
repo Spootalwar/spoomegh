@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite thread-count="2" parallel="tests" name="Suite">
+  <test name="TestRunner-Firefox">
+  <parameter name = "BROWSER" value = "firefox"/>
+    <classes>
+      <class name="com.comcast.crm.contacttest.CreateContacttest3grpexecutionwithCB"/>
+      <class name="com.comcast.crm.orgtest.CreateOrganizationTest3grpexecutionwithCB"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="TestRunner-Chrome">
+  <parameter name = "BROWSER" value = "chrome"/>
+    <classes>
+      <class name="com.comcast.crm.contacttest.CreateContacttest3grpexecutionwithCB"/>
+      <class name="com.comcast.crm.orgtest.CreateOrganizationTest3grpexecutionwithCB"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

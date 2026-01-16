@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+  <groups>
+   <run>
+     <include name = "smokeTest"/>
+     </run>
+    </groups>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.comcast.crm.contacttest.CreateContacttest3"/>
+      <class name="com.comcast.crm.orgtest.CreateOrganizationTest3"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

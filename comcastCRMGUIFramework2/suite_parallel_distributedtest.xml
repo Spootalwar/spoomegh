@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite thread-count="2" parallel="tests" name="Suite">
+
+  <test  name="Test-1">
+    <classes>
+      <class name="com.comcast.crm.contacttest.CreateContacttest3grpexecution"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test  name="Test-2">
+    <classes>
+      <class name="com.comcast.crm.orgtest.CreateOrganizationTest3grpexecution"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
