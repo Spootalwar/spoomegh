@@ -39,13 +39,10 @@ public class WebDriverUtility {
 	}
 	 
 	public void switchToTabOnTitle(WebDriver driver , String partialTitle) {
-		Set<String> set = driver.getWindowHandles();
-		Iterator<String> it = set.iterator();
-		
-		while (it.hasNext()) {
-			String windowID = it.next();
-			driver.switchTo().window(windowID);
-			
+		Set<String> allwid = driver.getWindowHandles();
+		for(String wid:allwid)
+		{
+			driver.switchTo().window(wid);
 			String actTitle= driver.getTitle();
 			if (actTitle.contains(partialTitle)) {
 				break;
